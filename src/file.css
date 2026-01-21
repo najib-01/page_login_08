@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    background: url(dd1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.title_logo{
+     background: linear-gradient(#ec2ccc,#27a0e6,#ebdc0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Trebuchet MS;
+  padding: 0 50px;
+  font-size: 60px;
+}
+.all_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    text-align: center;
+}
+.hr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+hr{
+    width: 100%;
+}
+.hr h2{
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.521);
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inp input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 35px 0 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    border-radius: 5px;
+    color: white;
+}
+.inp input::placeholder{
+    color: #ffffff9a;
+}
+.inp_password{
+    position: relative;
+}
+.inp_password .icon_eyeslash{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 15px;
+    color: rgb(98, 113, 129);
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: aqua;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.checkbox_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.checkbox_label{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.checkbox_link input{
+    margin-top: 1px;
+    transform: scale(1.2);
+    cursor: pointer;
+    accent-color: rgb(49, 95, 219);
+}
+.border{
+  border-left: 1px solid white;
+  padding: 0 50px;
+  width: 500px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn button{
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color:rgba(230, 214, 4, 0.808) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.btn button:hover{
+    background-color: rgba(235, 223, 58, 0.911) ;
+}
+.link_register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.icons{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   gap: 20px;
+}
+.icons a{
+    color: white;
+}
+.icons .icon_google{
+    background-color: rgb(231, 28, 28);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_twitter{
+    background-color: rgb(0, 162, 255);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_facebook{
+    background-color: rgb(45, 87, 165);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_facebook:hover, .icons .icon_twitter:hover, .icons .icon_google:hover{
+    box-shadow: 0 0 10px white;
+}
+
+@media (max-width:780px){
+    .all_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px;
+    overflow-x: hidden;
+}
+.border{
+    border: none;
+  width: 100%;
+}
+.title_logo{
+  font-size: 50px;
+}
+}
+@media (max-width:500px){
+    .all_items{
+        padding: 0 10px;
+    }
+}
+@media (max-width:353px){
+    .border h1{
+        font-size: 28px;
+    }
+}
