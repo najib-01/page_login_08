@@ -1,5 +1,5 @@
 import React from "react"
-import Login_page from "./Login_page"
+import Login_page from "./login_page"
 import Register_page from "./Register_page"
 import Forgot_password_page from "./Forgot_password_page"
 import "./file.css"
